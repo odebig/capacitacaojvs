@@ -3,3 +3,20 @@
 
 //DESAFIO: copie também o vetor de matérias, utilize o for para percorrer os dois vetores
 //e imprimir a matéria e a nota correspondente
+
+
+const { materias, notas } = require('./4.4.Arrays');
+
+// Calculando a média das notas
+let soma = 0;
+for (let i = 0; i < notas.length; i++) {
+  soma += notas[i];
+}
+
+const media = soma / notas.length;
+console.log('Média das notas:', media);
+
+// DESAFIO: imprimir matéria e nota juntas
+for (let i = 0; i < materias.length; i++) {
+  console.log(`${materias[i]}: ${notas[i]}`);
+}
